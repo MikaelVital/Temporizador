@@ -1,0 +1,12 @@
+<div>
+  <p>Ciclos restantes: {{ cycles }}</p>
+  <p>{{ isWorking ? 'Tempo de atividade' : 'Tempo de descanso' }}</p>
+  <p>Contagem: {{ count }}</p>
+  <label for="cycles-input">Ciclos: </label>
+  <input id="cycles-input" type="number" [(ngModel)]="cycles" />
+  <label for="rest-time-input">Tempo de descanso (segundos): </label>
+  <input id="rest-time-input" type="number" [(ngModel)]="restTime" />
+  <button (click)="start()">Iniciar</button>
+  <button (click)="pause()">Pausar</button>
+  <button (click)="stop()">Parar</button>
+</div>
